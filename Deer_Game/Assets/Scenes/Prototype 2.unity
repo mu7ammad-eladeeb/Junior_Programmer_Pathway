@@ -333,9 +333,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
   animalPrefabs:
-  - {fileID: 6649954734952915393, guid: a6b56f225835fa2439eaaa76367038ce, type: 3}
-  - {fileID: 7760799069471329162, guid: ce702fced97755a4f8e300b2727150d1, type: 3}
   - {fileID: 8922670817108952469, guid: 6200fb14422380b48af9a172030a0f86, type: 3}
+  - {fileID: 7760799069471329162, guid: ce702fced97755a4f8e300b2727150d1, type: 3}
+  - {fileID: 6649954734952915393, guid: a6b56f225835fa2439eaaa76367038ce, type: 3}
+  spawnAction:
+    m_Name: Spawn
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 25f9fd84-6e75-4279-8f0f-c8cf4adfa708
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: bfe66f21-f4cd-4eb0-bbca-d056c77e146d
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Spawn
+      m_Flags: 0
+    m_Flags: 0
 --- !u!4 &405504510
 Transform:
   m_ObjectHideFlags: 0
@@ -592,7 +609,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -785,46 +802,6 @@ MonoBehaviour:
     - m_Name: right
       m_Id: 178fea13-45df-43cd-ab2b-2fe250575b46
       m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 8
-    - m_Name: 2D Vector
-      m_Id: 2e9b270b-616b-4c29-b94f-e33106d7e268
-      m_Path: 2DVector
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 4
-    - m_Name: up
-      m_Id: c6cf503b-8659-4e3a-8587-33d6cab08ffe
-      m_Path: <Keyboard>/w
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 8
-    - m_Name: down
-      m_Id: be3abd89-6822-4682-9ce7-94d3ea41e813
-      m_Path: <Keyboard>/s
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 8
-    - m_Name: left
-      m_Id: 0bfb9125-1dba-4a2b-a65b-3b896037aa78
-      m_Path: <Keyboard>/a
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 8
-    - m_Name: right
-      m_Id: 9f7badb5-1b6d-4951-9a6d-322ae67300bf
-      m_Path: <Keyboard>/d
       m_Interactions: 
       m_Processors: 
       m_Groups: 

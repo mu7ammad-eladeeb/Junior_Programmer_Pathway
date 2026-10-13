@@ -564,6 +564,8 @@ GameObject:
   - component: {fileID: 4999259497849226434}
   - component: {fileID: 4725182454498917431}
   - component: {fileID: 4622977267479250042}
+  - component: {fileID: 4208832363959373270}
+  - component: {fileID: -1052878242136422988}
   m_Layer: 0
   m_Name: Moose01
   m_TagString: Untagged
@@ -630,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e5a548e7a685e428c0b921425b3a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: 10
+  speed: 7
 --- !u!114 &4622977267479250042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,6 +647,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
   lowerBound: -10
   upperBound: 30
+--- !u!65 &4208832363959373270
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6649954734952915393}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.17863612, y: 0.479618, z: 0.4411784}
+  m_Center: {x: -0.00000004063953, y: 0.2216376, z: 0.06744272}
+--- !u!114 &-1052878242136422988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6649954734952915393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 678c28779e405e24587198c848c54ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &6719159114381536429
 GameObject:
   m_ObjectHideFlags: 0

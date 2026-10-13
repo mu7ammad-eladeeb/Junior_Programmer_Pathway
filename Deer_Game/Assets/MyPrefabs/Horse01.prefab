@@ -1661,6 +1661,8 @@ GameObject:
   - component: {fileID: 8853809822671388885}
   - component: {fileID: 4626026011843028154}
   - component: {fileID: -8924552324966386752}
+  - component: {fileID: 1581337206764925057}
+  - component: {fileID: 6708242757750638572}
   m_Layer: 0
   m_Name: Horse01
   m_TagString: Untagged
@@ -1723,7 +1725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e5a548e7a685e428c0b921425b3a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: 15
+  speed: 10
 --- !u!114 &-8924552324966386752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1738,6 +1740,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
   lowerBound: -10
   upperBound: 30
+--- !u!65 &1581337206764925057
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7760799069471329162}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.3445, y: 38.387367, z: 44.450768}
+  m_Center: {x: 0.027766228, y: 18.250738, z: 4.188286}
+--- !u!114 &6708242757750638572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7760799069471329162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 678c28779e405e24587198c848c54ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &7960795308319864833
 GameObject:
   m_ObjectHideFlags: 0
